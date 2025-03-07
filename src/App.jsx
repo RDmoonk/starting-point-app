@@ -4,13 +4,15 @@ import CssPartExos from "./components/cssPart";
 import JsPartExos from "./components/javascript";
 import DocsInfos from "./components/documentation";
 
+
 function App() {
   return (
     <>
-      <header className="flex p-5 mb-10 bg-blue-900 shadow-md rounded-b-lg w-screen fixed md:w-screen ">
-        <h1>The Starting Point</h1>
+      <header className="flex p-5 mb-10 bg-blue-900 shadow-md rounded-b-lg w-screen fixed md:w-screen">
+        <h1 className="sm:text-10">The Starting Point</h1>
+        
+        <nav className="w-14 text-xl m-5 px-50 bg-auto border-blue-950 md:divide-t-4 flex xl:visible md:invisible">
 
-        <nav className="w-14 text-xl m-5 px-50 bg-auto border-blue-950 md:divide-t-4 flex">
           <a href="app.jsx" className="mx-20">
             <p className="text-white">Home</p>
           </a>
@@ -21,10 +23,11 @@ function App() {
             <p className="text-white">Exercices</p>
           </a>
         </nav>
+        
 
       </header>
 
-      <section className="p-10 px-100 m-10 text-xl">
+      <section className="p-10 m-10 text-xl md:px-100 md:mt-200">
         <article className="intro mt-20 mb-20">
           <p>
             Hello There ! If you are here it is because you want to learn, right
@@ -48,15 +51,15 @@ function App() {
               <li className="mb-20 font-black">
                 <a href="https://www.freecodecamp.org/">
                   freeCodeCamp: for HTML, CSS, Javascript and more
+                  <img className="shadow-md" src="https://play-lh.googleusercontent.com/6Sg_Za7s_9pgZnxN-2w5-rHkV1iBJcGNUmrGdfayjgHCXD3JYnumEhXFMbIYJePXjBdB" alt="fcc" />
                 </a>
-                <img className="shadow-md" src="/src/img/fccwebsite.png" alt="fcc" />
               </li>
 
               <li className="mb-30">
                 <a href="https://www.youtube.com/traversymedia">
                   Traversy Media: From basic to advanced web developpement
                   <img className="shadow-md" 
-                  src="/src/img/traversy yt.png" alt="tm" />
+                  src="https://yt3.googleusercontent.com/tgu72YzXtku2Ua3jfbDDIPgy_rm81Lt9uTKrYLWGJsiQTcBEhvrxe8OJDKvTYTrMNpTr45V1T-4=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="tm" />
                 </a>
               </li>
 
@@ -64,7 +67,7 @@ function App() {
                 <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">
                   The Net Ninja: well structured tutos on various framework
                   <img className="shadow-md"
-                   src="/src/img/net ninja yt.png" alt="nn" />
+                   src="https://yt3.googleusercontent.com/MPzoc_Hh8eZ-83FD1gNg3NubBUNcf6wuykpnc0y4OpDxP60pbXOhHbEtaX6J-9uyW5z1rDlI=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="nn" />
                 </a>
               </li>
 
@@ -72,7 +75,7 @@ function App() {
                 <a href="https://www.youtube.com/c/programmingwithmosh">
                   Programming with Mosh: Great JavaScript and backend tutos
                   <img className="shadow-md"
-                   src="/src/img/mosh yt.png" alt="my" />
+                   src="https://yt3.googleusercontent.com/ebwd1JYISYUL4Psf_tA5U4SavSAHC9gjO0UliAKSZvoXuOH6Ygr6KEIExbyYypYudHLNUXaAXuo=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="my" />
                 </a>
               </li>
             </ul>
@@ -85,28 +88,31 @@ function App() {
               <li className="mb-20">
                 <a href="https://www.sololearn.com/fr/">
                   SoloLearn: Interactive web developpemnt courses
-                </a>
-                <img className="shadow-md"
+                  <img className="shadow-md"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/SoloLearn_logo.svg/2560px-SoloLearn_logo.svg.png"
                   alt="sl"
                 />
+                </a>
+
               </li>
 
               <li className="mb-20">
-                <a href="https://mimo.org/">Mimo: learn coding like a game</a>
+                <a href="https://mimo.org/">Mimo: learn coding like a game
                 <img
                   className="size-50 shadow-lg"
                   src="https://upload.wikimedia.org/wikipedia/commons/b/be/Mimo_Logo.png"
                   alt="mm"
                 />
+                </a>
+
               </li>
 
               <li className="mb-20">
                 <a href="https://grasshopper-yz.netlify.app/">
                   Grasshopper: Js basics for beginners
+                  <img className="shadow-lg"
+                 src="https://grasshopper-yz.netlify.app/img/logo.blue.svg" alt="gh" />
                 </a>
-                <img className="shadow-lg"
-                 src="/src/img/ghlogo.png" alt="gh" />
               </li>
             </ul>
           </article>
@@ -157,9 +163,9 @@ function App() {
         </article>
       </section>
 
-      <footer className="bg-blue-900 h-20">
+      <footer className="bg-blue-900 h-20 w-screen">
   
-        <nav className="w-14 text-xl m-5 pt-5 px-50 bg-auto border-blue-950 md:divide-t-4 flex">
+        <nav className="w-14 text-xl m-5 pt-5 px-50 bg-auto border-blue-950 lg:flex md:divide-t-4">
           <a href="app.jsx" className="mx-20">
             <p className="text-white">Home</p>
           </a>

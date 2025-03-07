@@ -1,11 +1,8 @@
-import { useState } from "react";
 import "./App.css";
-import NavbarWebExos from "./components/navbar";
 import HtmlPartExos from "./components/htmlParts";
 import CssPartExos from "./components/cssPart";
 import JsPartExos from "./components/javascript";
 import DocsInfos from "./components/documentation";
-import ButtonUp from "./components/buttonScrollUp";
 
 function App() {
   return (

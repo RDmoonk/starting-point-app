@@ -27,7 +27,7 @@ function App() {
 
       </header>
 
-      <section className="p-10 m-10 text-xl md:px-100 md:mt-200">
+      <section className="p-10 m-10 text-xl md:px-100 mt-70">
         <article className="intro mt-20 mb-20">
           <p>
             Hello There ! If you are here it is because you want to learn, right
